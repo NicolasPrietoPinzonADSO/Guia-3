@@ -1,21 +1,22 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // 8. En cierta empresa se les paga a sus trabajadores de la siguiente forma: si el empleado es de planta,
-    // la hora trabajada se le paga a $20000, si el empleado es administrativo, la hora trabajada se le paga
-    // a $10000. Para calcular su pago es necesario conocer el total de horas trabajadas.    
-    let horaPlanta = 20000
-    let horaAdmin = 10000
-    let horas = Number(prompt('Inserte la cantidad de horas trabajadas'))
-    let tipoEmple = prompt('Identifiquese como trabajador de planta o administrativo')
-    let minus = tipoEmple.toLowerCase
-    if (minus=='planta'){
-        pagaPlanta=horas*horaPlanta
-        console.log(`Su paga es de ${pagaPlanta}`);
+    // 9. Realizar el algoritmo que lea N números, calcule y escriba la suma de los pares y el producto de los
+    // impares. Numero par es aquel que su residuo igual a cero (num mod !=0)
+    
+    let producto = 1
+    let total = 0
+    let num = Number(prompt('Ingrese el numero '))
+    let num1 = num+1
+    for (i=0 ; i<num1; i++) {
+        if (i%2==0){
+            total+=i
+        }
     }
-    else if (minus=='administrativo'){
-        pagaAdmin=horas*horaAdmin
-        console.log(`Su paga es de ${pagaAdmin}`);
+    for (i=0; i<num1 ;i++){
+        if (i%2!=0){
+            producto*=i
+        }
     }
-    else{
-        console.log('No se identifico como un trabajador');
-    }
+    console.log(`La suma de los pares es de ${total}`);
+    console.log(`El producto de los impares es de ${producto}`);
+
 })
