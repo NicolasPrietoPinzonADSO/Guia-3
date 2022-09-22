@@ -1,19 +1,19 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // 10. Calcular el valor total del valor de 5 productos, el IVA y el subtotal, visualizar los resultados de:
-    // Iva, Subtotal y Total de la compra de los artículos
+    // 11. Programa para solicitar el nombre, apellido, edad y la nota promedio de 5 estudiantes de un curso
+    // de computación.
+    const arra =[]
+    do{
+    let nombre =(prompt('Ingrese su nombre y apellido'))
+    let nota1 = Number(prompt('Ingrese su nota1'))
+    let nota2 = Number(prompt('Ingrese su nota2'))
+    let nota3 = Number(prompt('Ingrese su nota3'))
+    let nota4 = Number(prompt('Ingrese su nota4'))
+    let nota5=  Number(prompt('Ingrese su nota5'))
+    let prom = (nota1+nota2+nota3+nota4+nota5)/5
+    arra.push(nombre)
+    arra.push(prom)
+    }
+    while (confirm('Desea ingresar otro estudiante'))
+    console.log(`${arra}`);
     
-    let prod1 = Number(prompt('Ingrese el valor del primer producto'))
-    let prod2 = Number(prompt('Ingrese el valor del primer producto'))
-    let prod3 = Number(prompt('Ingrese el valor del primer producto'))
-    let prod4 = Number(prompt('Ingrese el valor del primer producto'))
-    let prod5=  Number(prompt('Ingrese el valor del primer producto'))
-    let iva = 0.19
-    let subt = prod1+prod2+prod3+prod4+prod5
-    let iva1 = subt*iva
-    let total = iva1+subt
-    
-    console.log(`El subtotal es ${subt}`);
-    console.log(`El total es ${total}`);
-    console.log(`El iva es el del 19% ${iva}`);
-
 })
