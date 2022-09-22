@@ -1,19 +1,13 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // 11. Programa para solicitar el nombre, apellido, edad y la nota promedio de 5 estudiantes de un curso
-    // de computación.
-    const arra =[]
-    do{
-    let nombre =(prompt('Ingrese su nombre y apellido'))
-    let nota1 = Number(prompt('Ingrese su nota1'))
-    let nota2 = Number(prompt('Ingrese su nota2'))
-    let nota3 = Number(prompt('Ingrese su nota3'))
-    let nota4 = Number(prompt('Ingrese su nota4'))
-    let nota5=  Number(prompt('Ingrese su nota5'))
-    let prom = (nota1+nota2+nota3+nota4+nota5)/5
-    arra.push(nombre)
-    arra.push(prom)
+    // 12. Restarle al primer número al segundo (siempre y cuando el primero sea mayor que él segundo, en
+    //     caso contrario indicar con un mensaje que la operación no es posible realizarla
+    let num1= Number(prompt('Ingrese un numero al que restara'))
+    let num2= Number(prompt('Ingrese un numero a restar'))
+    if (num1>num2){
+        resta=num1-num2
+        console.log(`El resultado de la resta es ${resta}`);
     }
-    while (confirm('Desea ingresar otro estudiante'))
-    console.log(`${arra}`);
-    
+    else{
+        console.log('No es posible realizar la operacion');
+    }
 })
